@@ -18,7 +18,7 @@ function HomePage() {
 
     useEffect(() =>{
         fetchData()
-    })
+    }, []) //if effect doesn't need props or state
     
   return (
     <>
