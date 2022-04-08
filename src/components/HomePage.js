@@ -51,11 +51,24 @@ function HomePage() {
                   <button className="resetBtn"     onClick={() => { resetScore(item.value)      }}>Reset</button>
                 </div>
                 <h2>Let's Play!</h2>
-                <button>Get Question</button>
-                <h2>Category:</h2>
-                <h2>Points:</h2>
-                <h2>Answer:</h2>
-                <button>Click to Reveal Question</button>
+                <button className="questionBtn"    onClick={() => { return fetchData(), setHide(true)}}>Get Question</button>
+                <h2>Category: 
+                    <span>{item.category.title}</span>
+                </h2>
+                <h2 className="pointsBtn">Points:
+                    <span>{item.value}</span>
+                </h2>
+                <h2>Answer:
+                <span>{item.question}</span>
+                </h2>
+                <button className="revealBtn" onClick={()=> { setHide(!hide )}}>Click to Reveal Question</button>
+                {!hide ? 
+                    <h3>Answer: 
+                        <span>{item.answer}</span> 
+                    </h3>
+                    :
+                    " "
+                }
               </div>
             </>
 
