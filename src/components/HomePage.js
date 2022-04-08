@@ -4,6 +4,22 @@ import { useState, useEffect } from "react";
 import React from "react";
 
 function HomePage() {
+    const [ question, setQuestion ] = useState([])
+
+    const fetchData = async () => {
+        try {
+            const response = await fetch("https://jservice.io/api/random")
+            const data = await response.json()
+            setQuestion(data);
+        }catch( err ) {
+            console.error(err)
+        }
+    }
+
+    useEffect(() =>{
+        fetchData()
+    })
+    
   return (
     <>
       <div>
