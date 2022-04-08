@@ -1,4 +1,31 @@
-body {
-    background-color: aliceblue;
+
+  body {
+    margin: 0;
+    height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background: #e4e6ee;
+    font-family: italic sans-serif;
+  }
+  .App {
+    background: #3d5f73 ;
+    border-radius: 9px;
+    border: 10px solid #e7ecfb;
+    box-shadow: 0 0 30px #497792 ;
+    padding: 100px;
     text-align: center;
   }
+  h1 {
+    
+    color: white;
+    font-size: 3.5em;
+  }
+  h2 {
+    color: #e7d17a;
+    font-size: 2.5em;
+    text-align: center;
+  
+  }
+  
