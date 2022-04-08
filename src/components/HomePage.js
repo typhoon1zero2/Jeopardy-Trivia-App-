@@ -17,7 +17,7 @@ function HomePage() {
 
   useEffect(() => {
     fetchData();
-  }, []); //if effect doesn't need props or state
+  }, []); //Empty [] tell use effect to only run once the homepage component is mount on screen
 
   const [hide, setHide] = useState(true);
   const [score, setScore] = useState(0);
@@ -26,7 +26,7 @@ function HomePage() {
     setScore(score + parseInt(data));
   };
   const decreaseScore = (data) => {
-    setScore((score - parseInt(data)));
+    setScore(score - parseInt(data));
   };
   const revealQuestion = (data) => {
     setHide(data);
