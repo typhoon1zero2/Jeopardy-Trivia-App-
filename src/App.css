@@ -1,31 +1,83 @@
+body {
+  margin: 0;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: #e4e6ee;
+  font-family: fantasy;
+}
+.App {
+  background: #3d5f73;
+  border-radius: 9px;
+  border: 10px solid #e7ecfb;
+  box-shadow: 0 0 30px #497792;
+  padding: 100px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 3.5em;
+}
+h2 {
+  color: #e7d17a;
+  font-size: 2.5em;
+  text-align: center;
+}
+button {
+  background-color: transparent;
+  font-size: 1.5em;
+  height: 60px;
+  width: 125px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+/* -+ reset button */
+.decreaseBtn {
+  background-color: #fe948c;
+  margin: 10px;
+  padding: 10px;
+}
+.increaseBtn {
+  background-color: #6191b5;
+  margin: 10px;
+  padding: 10px;
+}
+.resetBtn {
+  background-color: #e81e37;
+  margin: 10px;
+  padding: 10px;
+}
+.questionBtn {
+  background-color: #ead37a;
+  width: 150px;
+}
+.revealBtn {
+  background-color: #1b2550;
+  width: 500px !important;
+  color: white;
+  margin-bottom: 50px;
+}
 
-  body {
-    margin: 0;
-    height: 100vh;
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    background: #e4e6ee;
-    font-family: italic sans-serif;
-  }
-  .App {
-    background: #3d5f73 ;
-    border-radius: 9px;
-    border: 10px solid #e7ecfb;
-    box-shadow: 0 0 30px #497792 ;
-    padding: 100px;
-    text-align: center;
-  }
-  h1 {
-    
-    color: white;
-    font-size: 3.5em;
-  }
-  h2 {
-    color: #e7d17a;
-    font-size: 2.5em;
-    text-align: center;
-  
-  }
-  
+/* h1 - h2 -h3 -span */
+h1 > span {
+  color: white;
+}
+h2 > span {
+  color: white;
+}
+h3 > span {
+  color: white;
+  text-align: center;
+}
+.answer {
+  font-size: 1.5rem;
+}
+.point {
+  font-size: 1.5rem;
+}
