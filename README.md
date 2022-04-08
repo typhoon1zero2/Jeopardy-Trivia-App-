@@ -1,4 +1,5 @@
-## jService 
+## jService  - Jeopardy Trivia App
+
 ### jService API
 `jService is an API that has Jeopardy trivia questions and answers available to the public.`
 
