@@ -41,12 +41,14 @@ function HomePage() {
         return (
             <>
               <div>
-                <h1>Jeopardy Trivia App</h1>
-                <h2>Score</h2>
-                <div>
-                  <button>Increase</button>
-                  <button>Decrease</button>
-                  <button>Reset</button>
+                <h1>Welcome to Jeopardy</h1>
+                <h2>Score:
+                    <span style={score >= 0 ? { color: "white" } : { color: "red"}}> {score} </span>
+                </h2>
+                <div className="btnContainer">
+                  <button className="decreaseBtn"  onClick={() => { decreaseScore(item.value) }}>Decrease</button>
+                  <button className="increaseBtn"  onClick={() => { increaseScore(item.value) }}>Increase</button>
+                  <button className="resetBtn"     onClick={() => { resetScore(item.value)      }}>Reset</button>
                 </div>
                 <h2>Let's Play!</h2>
                 <button>Get Question</button>
