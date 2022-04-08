@@ -52,18 +52,18 @@ function HomePage() {
                 </div>
                 <h2>Let's Play!</h2>
                 <button className="questionBtn"    onClick={() => { return fetchData(), setHide(true)}}>Get Question</button>
-                <h2>Category: 
+                <h2>Category: { }
                     <span>{item.category.title}</span>
                 </h2>
-                <h2 className="pointsBtn">Points:
+                <h2 className="point">Points: { }
                     <span>{item.value}</span>
                 </h2>
-                <h2>Answer:
+                <h2 className="answer">Answer: { } 
                 <span>{item.question}</span>
                 </h2>
                 <button className="revealBtn" onClick={()=> { setHide(!hide )}}>Click to Reveal Question</button>
                 {!hide ? 
-                    <h3>Answer: 
+                    <h3>Answer: { }
                         <span>{item.answer}</span> 
                     </h3>
                     :
