@@ -26,9 +26,9 @@ function HomePage() {
     setScore(score + parseInt(data));
   };
   const decreaseScore = (data) => {
-    setScore((score = parseInt(data)));
+    setScore((score - parseInt(data)));
   };
-  const toggleQuestion = (data) => {
+  const revealQuestion = (data) => {
     setHide(data);
   };
   const resetScore = () => {
@@ -48,7 +48,7 @@ function HomePage() {
                 <div className="btnContainer">
                   <button className="decreaseBtn"  onClick={() => { decreaseScore(item.value) }}>Decrease</button>
                   <button className="increaseBtn"  onClick={() => { increaseScore(item.value) }}>Increase</button>
-                  <button className="resetBtn"     onClick={() => { resetScore(item.value)      }}>Reset</button>
+                  <button className="resetBtn"     onClick={() => { resetScore()      }}>Reset</button>
                 </div>
                 <h2>Let's Play!</h2>
                 <button className="questionBtn"    onClick={() => { return fetchData(), setHide(true)}}>Get Question</button>
